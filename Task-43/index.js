@@ -1,0 +1,19 @@
+// Name = Ubaid 
+// Date = 9-Oct-2022
+
+let magician_names = ["mag_1", "mag_2", "mag_3", "mag_4", "mag_5"];
+
+function make_great(){
+    let magician_names_copy = [];
+    for(i=0; i< magician_names.length; i++)
+        magician_names_copy[i] = String(magician_names[i]).concat(" the Great"); 
+    return magician_names_copy;
+}
+
+function show_magicians(mag_names){
+    for(i=0; i< mag_names.length; i++)
+        console.log(mag_names[i]); 
+}
+let magician1 = make_great();
+show_magicians(magician_names);
+show_magicians(magician1);
