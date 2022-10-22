@@ -15,8 +15,8 @@ for(let i=0; i < new_users.length; i++){
             alreadyFound = false;
     }
     if(alreadyFound == true)
-        console.log("Sorry, you will need to enter a new username");
+        console.log(`Sorry, ${new_users[i].toLowerCase()} is already taken`);
     else
-        console.log("The username is available");
+        console.log(`The username ${new_users[i].toLowerCase()} is available`);
 
 }
